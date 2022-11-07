@@ -48,3 +48,40 @@ footer ul {
     height: 10%;
     width: 10%;
 }
+
+
+.flexContainer {
+    display: flex;
+}
+
+.flexContainer div {
+    width: 33%;
+}
+
+.flexContainer img {
+    width: 50%;
+    height: 50%;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 200px 200px;
+    grid-template-areas: 'Image Para Image para';
+}
+
+.workGrid img {
+    width: 50%;
+}
+
+@media only screen and (max-width: 600) {
+    .flexContainer{flex-direction: column;}
+    .flexContainer div{width: 100%;}
+    .workGrid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 100px 100px 100px;
+        grid-template-areas: 'Image Para Image Para';
+    }
+}
+
+
